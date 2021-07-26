@@ -18,6 +18,11 @@ minikube profile list
 minikube profile multinode-demo
 
 
+# Setup of registry for minikube
+
+minikube addons configure registry-creds
+
+
 #Setup of the Ingress Controller for Minikube 
 
 minikube addons enable ingress
