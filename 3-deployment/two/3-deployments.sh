@@ -1,5 +1,4 @@
-ssh aen@c1-master1
-cd ~/content/course/03/demos/
+
 
 #Demo 1 - Creating and Scaling a Deployment.
 #Let's start off imperatively creating a deployment and scaling it...
