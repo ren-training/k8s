@@ -6,7 +6,7 @@
 #   5. Take snapshots prior to installation, this way you can install 
 #       and revert to snapshot if needed 
 #
-ssh aen@c1-cp1
+SSH to Master Node
 
 
 #0 - Disable swap, swapoff then edit your fstab removing any entry for swap partitions
