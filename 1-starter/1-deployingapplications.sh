@@ -16,9 +16,7 @@ kubectl get pods
 kubectl get pods -o wide
 
 
-#Remember, k8s is a container orchestrator and it's starting up containers on Nodes.
-#Open a second terminal and ssh into the node that hello-world pod is running on.
-ssh aen@c1-node[XX]
+
 
 
 #When containerd is your container runtime, use crictl to get a listing of the containers running
