@@ -2,8 +2,7 @@
 #If you are using containerd, make sure docker isn't installed. 
 #kubeadm init will try to auto detect the container runtime and at the moment 
 #it if both are installed it will pick docker first.
-ssh aen@c1-cp1
-
+SSH to master Server
 
 #0 - Creating a Cluster
 #Create our kubernetes cluster, specify a pod network range matching that in calico.yaml! 
