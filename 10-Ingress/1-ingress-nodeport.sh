@@ -1,7 +1,3 @@
-#Many choices for an ingress controller
-ssh aen@c1-master1
-cd ~/content/course/m4/demos/
-
 
 #For our Ingress Controller, we're going to go with nginx, widely available and easy to use. 
 #Follow this link here to find a manifest for nginx Ingress Controller for various infrastructures, Cloud, Bare Metal, EKS and more.
