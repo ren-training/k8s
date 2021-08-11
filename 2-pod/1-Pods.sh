@@ -18,13 +18,12 @@ kubectl get pods
 #Let's use exec a command inside our container, we can see the GET and POST API requests through the API server to reach the pod.
 kubectl -v 6 exec -it PASTE_POD_NAME_HERE -- /bin/sh
 ps
-exit
+
 
 #Let's look at the running container/pod from the process level on a Node.
 kubectl get pods -o wide
-ssh aen@c1-node[xx]
 ps -aux | grep hello-app
-exit
+
 
 #Now, let's access our Pod's application directly, without a service and also off the Pod network.
 kubectl port-forward PASTE_POD_NAME_HERE 80:8080
@@ -51,8 +50,7 @@ ctrl+c
 #Quickly create a Pod manifest using kubectl run with dry-run and -o yaml...copy that into your clipboard
 kubectl run hello-world --image=gcr.io/google-samples/hello-app:2.0 --dry-run=client -o yaml --port=8080 
 
-#Log into a node...
-ssh aen@c1-node1
+
 
 #Find the staticPodPath:
 sudo cat /var/lib/kubelet/config.yaml
@@ -62,8 +60,6 @@ sudo cat /var/lib/kubelet/config.yaml
 sudo vi /etc/kubernetes/manifests/mypod.yaml
 ls /etc/kubernetes/manifests
 
-#Log out of c1-node1 and back onto c1-cp1
-exit
 
 #Get a listing of pods...the pods name is podname + node name
 kubectl get pods -o wide
@@ -78,11 +74,9 @@ kubectl get pods
 
 
 #Remove the static pod manifest on the node
-ssh aen@c1-node1
+connect to the master pod
 sudo rm /etc/kubernetes/manifests/mypod.yaml
 
-#Log out of c1-node1 and back onto c1-cp1
-exit
 
 #The pod is now gone.
 kubectl get pods 
