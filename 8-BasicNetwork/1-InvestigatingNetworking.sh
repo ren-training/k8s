@@ -22,7 +22,7 @@ PODNAME=$(kubectl get pods --selector=app=hello-world -o jsonpath='{ .items[0].m
 echo $PODNAME
 kubectl exec -it $PODNAME -- /bin/sh
 ip addr
-exit
+
 
 
 #For the Pod on c1-node, let's find out how traffic gets from c1-master1 to c1-node1 to get to that Pod.
@@ -65,8 +65,7 @@ ip addr
 route
 
 
-#Exit back to c1-master1
-exit
+#Exit ba
 
 
 
@@ -137,8 +136,6 @@ sudo apt-get install bridge-utils -y
 sudo brctl show
 
 
-#Exit the SSH session to the Node
-exit
 
 
 #Exit the container
