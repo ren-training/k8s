@@ -1,6 +1,3 @@
-#Many choices for an ingress controller
-ssh aen@c1-master1
-cd ~/content/course/04/demos/
 
 
 #For our Ingress Controller, we're going to go with nginx, widely available and easy to use. 
