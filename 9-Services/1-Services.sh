@@ -1,5 +1,3 @@
-ssh aen@c1-master1
-cd ~/content/course/03/demos/
 
 #1 - Exposing and accessing applications with Services on our local cluster
 #ClusterIP
