@@ -1,7 +1,4 @@
-#1 - Investigating Kubernetes Networking
-#Log into our local cluster
-ssh aen@c1-master1
-cd ~/content/course/02/demos
+
 
 
 
