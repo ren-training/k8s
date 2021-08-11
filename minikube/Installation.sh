@@ -11,7 +11,7 @@ https://v1-18.docs.kubernetes.io/docs/tasks/tools/install-minikube/
 
 
 # start multiple node minikube 
-minikube start --nodes 4 -p multinode-demo
+minikube start --nodes 4 -p multinode
 
 #Select the profile 
 minikube profile list
