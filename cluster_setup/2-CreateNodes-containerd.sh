@@ -1,5 +1,5 @@
 #For this demo ssh into c1-node1
-ssh aen@c1-node1
+SSH to Each Nodes
 
 
 #Disable swap, swapoff then edit your fstab removing any entry for swap partitions
