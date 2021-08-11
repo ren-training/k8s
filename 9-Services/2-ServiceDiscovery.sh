@@ -1,5 +1,3 @@
-ssh aen@c1-master1
-cd ~/content/course/03/demos/
 
 
 #Service Discovery
