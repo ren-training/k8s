@@ -1,5 +1,3 @@
-ssh aen@c1-master1
-cd ~/content/course/02/demos
 
 
 #1. Investigating the Cluster DNS Service
@@ -116,14 +114,4 @@ nslookup www.centinosystems.com
 ctrl+c
 
 
-#Log out of the node, back onto c1-master1
-exit
-
-
-#Switch sessions and break out of our pod and it will be deleted.
-exit
-
-
-#Exit out of our second SSH session and get a shell back on c1-master1
-exit
 
