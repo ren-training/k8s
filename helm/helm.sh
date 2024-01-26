@@ -1,0 +1,2 @@
+helm version
+helm env
