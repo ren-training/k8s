@@ -68,3 +68,8 @@ sudo apt-get install -y bash-completion
 echo "source <(kubectl completion bash)" >> ~/.bashrc
 source ~/.bashrc
 kubectl g[tab][tab] po[tab][tab] --all[tab][tab]
+
+
+kubectl config get-contexts
+kubectl config use-context <context-name>
+kubectl config current-contexts
