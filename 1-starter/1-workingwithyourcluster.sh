@@ -73,3 +73,8 @@ kubectl g[tab][tab] po[tab][tab] --all[tab][tab]
 kubectl config get-contexts
 kubectl config use-context <context-name>
 kubectl config current-contexts
+
+kubectl version
+kubectl version --short
+
+kubectl version --client --output=yaml
